@@ -1,0 +1,169 @@
+/* 기본 스타일 (라이트모드 기준) */
+:root {
+  --bg-main: #f8f5f0;
+  --text-main: #4b3f32; /* 따뜻한 브라운 */
+  --bg-header: #e8dfd8;
+  --text-header: #3d3527;
+  --subtext: #857965; /* 카키빛 브라운 */
+  --cta-bg: #d6a867; /* 머스터드 베이지 */
+  --cta-hover: #bf8e4c;
+}
+
+body {
+  font-family: "SUIT", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* 헤더 */
+.header {
+  background-color: var(--bg-header);
+  color: var(--text-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact-icons i {
+  margin-left: 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.icon-phone::before {
+  content: "📞";
+}
+.icon-call::before {
+  content: "📱";
+}
+.icon-chat::before {
+  content: "💬";
+}
+
+/* 메인 */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-header);
+  color: var(--text-header);
+  padding: 60px 5%;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.content {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.content h1 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: var(--subtext);
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: var(--cta-bg);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--cta-hover);
+}
+
+.baby-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.baby-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .contact-icons i {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+
+/* 🌙 다크모드 수동 적용 */
+body.dark {
+  --bg-main: #2d2a26;
+  --text-main: #f1e9dc;
+  --bg-header: #3b372f;
+  --text-header: #f8f5f0;
+  --subtext: #a59785;
+  --cta-bg: #d6a867;
+  --cta-hover: #c39350;
+}
+
+body.dark .baby-image img {
+  filter: brightness(0.92);
+}
+
+/* 자동 감지용 (참고용으로 유지 가능) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) {
+    --bg-main: #2d2a26;
+    --text-main: #f1e9dc;
+    --bg-header: #3b372f;
+    --text-header: #f8f5f0;
+    --subtext: #a59785;
+    --cta-bg: #d6a867;
+    --cta-hover: #c39350;
+  }
+}
