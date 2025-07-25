@@ -36,19 +36,24 @@ body header {
   display: flex; /* 중앙 배치를 위한 flex */
   justify-content: center; /* 가로 중앙 */
   align-items: center; /* 세로 중앙 */
-  /* flex-direction: column; */
+  /* text-align: center; */
 }
+/* 
+.form-group {
+  display: inline-block;
+  vertical-align: middle;
+} */
 
 .lead {
   color: #666666; /* 짙은 회색 */
-  font-size: 16px; /* 조금 작게 */
+  font-size: 20px; /* 조금 작게 */
   margin-top: 10px;
 }
 
 .login-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #857965; /* 부트스트랩식 파란색 */
+  background-color: #685e4d; /* 부트스트랩식 파란색 */
   color: white;
   border: none;
   border-radius: 6px;
@@ -60,14 +65,14 @@ body header {
 
 /* 호버 시 */
 .login-btn:hover {
-  background-color: #3d3527;
+  background-color: #857965;
   transform: scale(1.03);
 }
 
 /* 포커스 시 */
 .login-btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(240, 229, 168, 0.904);
 }
 
 /* 1. 배경 전체 흐림 (backdrop-filter)
