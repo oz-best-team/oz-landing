@@ -53,6 +53,11 @@ body header {
   margin-top: 10px;
 }
 
+.logo {
+  max-width: 92px;
+  max-height: auto;
+}
+
 .login-btn {
   padding: 10px 20px;
   font-size: 16px;
