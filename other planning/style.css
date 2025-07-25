@@ -78,6 +78,13 @@ body header {
   box-shadow: 0 0 0 3px rgba(240, 229, 168, 0.904);
 }
 
+.nav-item {
+  font-size: 30px; /* 메뉴 글자 크기 */
+  font-weight: 10000; /* 메뉴 글자 두께 */
+  margin-left: 20px; /* 각 메뉴 간격 */
+  color: #ffffff;
+}
+
 /* 1. 배경 전체 흐림 (backdrop-filter)
 폼을 감싸는 요소 뒷배경이 흐려짐 → 유리창처럼 흐릿하게 보이는 효과. */
 
