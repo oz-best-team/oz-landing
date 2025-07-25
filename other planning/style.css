@@ -36,6 +36,7 @@ body header {
   display: flex; /* 중앙 배치를 위한 flex */
   justify-content: center; /* 가로 중앙 */
   align-items: center; /* 세로 중앙 */
+  /* flex-direction: column; */
 }
 
 .lead {
