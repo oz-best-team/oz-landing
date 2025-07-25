@@ -79,7 +79,7 @@ body header {
 }
 
 .nav-item {
-  font-size: 30px; /* 메뉴 글자 크기 */
+  font-size: 24px; /* 메뉴 글자 크기 */
   font-weight: 10000; /* 메뉴 글자 두께 */
   margin-left: 20px; /* 각 메뉴 간격 */
   color: #ffffff;
